@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="Black" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SoulsUtility.SummoningCalculator">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+            iOS="0, 20, 0, 0">
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout Padding="15, 0, 15, 0" Spacing="40">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+            <Button Text="-" IsEnabled="false" Clicked="Handle_Clicked" FontSize="40" x:Name="minus" />
+            <Label x:Name="level" FontSize="40" TextColor="White" HorizontalTextAlignment="Center" BackgroundColor="Black" WidthRequest="150" />
+            <Button Text="+" IsEnabled="true" Clicked="Handle_Clicked" FontSize="40" x:Name="plus" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <StackLayout Padding="20" HorizontalOptions="CenterAndExpand">
+                <Label Text="Min" TextColor="White" FontSize="10" HorizontalTextAlignment="Center"/>
+                <Label x:Name="min" FontSize="40" Text="0" TextColor="White" WidthRequest="75" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <BoxView WidthRequest="1" BackgroundColor="Gray" HorizontalOptions="CenterAndExpand" Margin="0, 20, 0, 20"/>
+            <StackLayout Padding="20" HorizontalOptions="CenterAndExpand">
+                <Label Text="Max" TextColor="White" FontSize="10" HorizontalTextAlignment="Center"/>
+                <Label x:Name="max" FontSize="40" Text="0" TextColor="White" WidthRequest="75" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </StackLayout>
+        <Grid ColumnSpacing="20" RowSpacing="20" VerticalOptions="EndAndExpand" Padding="0, 0, 0, 40">
+            <Button Grid.Row="0" Grid.Column="0" Text="1" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="1.5" Clicked="Numeric_Click"/>
+            <Button Grid.Row="0" Grid.Column="1" Text="2" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="1.5" Clicked="Numeric_Click"/>
+            <Button Grid.Row="0" Grid.Column="2" Text="3" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="1.5" Clicked="Numeric_Click"/>
+            <Button Grid.Row="1" Grid.Column="0" Text="4" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="1.5" Clicked="Numeric_Click"/>
+            <Button Grid.Row="1" Grid.Column="1" Text="5" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="1.5" Clicked="Numeric_Click"/>
+            <Button Grid.Row="1" Grid.Column="2" Text="6" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="1.5" Clicked="Numeric_Click"/>
+            <Button Grid.Row="2" Grid.Column="0" Text="7" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="1.5" Clicked="Numeric_Click"/>
+            <Button Grid.Row="2" Grid.Column="1" Text="8" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="1.5" Clicked="Numeric_Click"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="9" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="1.5" Clicked="Numeric_Click"/>
+            <Button Grid.Row="3" Grid.Column="1" Text="0" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="1.5" Clicked="Numeric_Click"/>
+            <Button Grid.Row="3" Grid.Column="2" Text="del" BackgroundColor="Black" TextColor="White" BorderColor="White" BorderWidth="1.5" Clicked="Numeric_Click"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
