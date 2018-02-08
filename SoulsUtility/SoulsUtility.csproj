@@ -30,7 +30,19 @@
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
     <EmbeddedResource Include="SoulsUtilityPage.xaml" />
-    <EmbeddedResource Include="SummoningCalculator.xaml">
+    <EmbeddedResource Include="DarkSouls\SummoningCalculator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarkSouls\CharacterBuilder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarkSouls\dsSide.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarkSouls\DarkSouls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -43,8 +55,18 @@
       <DependentUpon>SoulsUtilityPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SummoningCalculator.xaml.cs">
+    <Compile Include="DarkSouls\SummoningCalculator.xaml.cs">
       <DependentUpon>SummoningCalculator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DarkSouls\CharacterBuilder.xaml.cs">
+      <DependentUpon>CharacterBuilder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DarkSouls\dsSide.xaml.cs">
+      <DependentUpon>dsSide.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\MasterPageItem.cs" />
+    <Compile Include="DarkSouls\DarkSouls.xaml.cs">
+      <DependentUpon>DarkSouls.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +82,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DarkSouls\" />
+    <Folder Include="Shared\" />
+    <Folder Include="DarkSoulsII\" />
+    <Folder Include="DarkSoulsIII\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />

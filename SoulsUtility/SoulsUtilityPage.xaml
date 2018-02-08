@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TabbedPage BarBackgroundColor="Black"
-    xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SoulsUtility" x:Class="SoulsUtility.SoulsUtilityPage">
-    <local:SummoningCalculator Title="Kolton is Lame!" /> 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:SoulsUtility" 
+    xmlns:DarkSouls="clr-namespace:SoulsUtility.DarkSouls"
+    xmlns:DarkSoulsII="clr-namespace:SoulsUtility.DarkSoulsII"
+    xmlns:DarkSoulsIII="clr-namespace:SoulsUtility.DarkSoulsIII"
+    x:Class="SoulsUtility.SoulsUtilityPage">
+    <DarkSouls:DarkSouls Title="DarkSouls" /> 
     <ContentPage Title="Welcome">
         <Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
     </ContentPage>

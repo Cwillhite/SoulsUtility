@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace SoulsUtility
+namespace SoulsUtility.DarkSouls
 {
     public partial class SummoningCalculator : ContentPage
     {

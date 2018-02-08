@@ -11,7 +11,8 @@
 namespace SoulsUtility {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/jalenmcelroy/Repos/SoulsUtility/SoulsUtility/SoulsUtilityPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/coltonwillhite/Projects/Cwillhite/SoulsUtility.git/SoulsUtility/SoulsUtili" +
+        "tyPage.xaml")]
     public partial class SoulsUtilityPage : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
